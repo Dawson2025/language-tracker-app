@@ -1,0 +1,182 @@
+{
+  "version": "1.0",
+  "description": "User Story Test Automation Configuration for Language Tracker",
+  "updated": "2025-10-21",
+  "user_stories": [
+    {
+      "story_id": "US-001",
+      "title": "User Registration",
+      "fast_test_file": "tests/user_stories/fast/test_us001_registration_fast.py",
+      "realistic_test_file": "tests/user_stories/realistic/test_us001_registration_realistic.py",
+      "dependencies": [],
+      "priority": 1,
+      "estimated_duration_fast": 15,
+      "estimated_duration_realistic": 120,
+      "parallel_safe": true,
+      "environments": ["dev", "test", "staging"]
+    },
+    {
+      "story_id": "US-002",
+      "title": "User Login",
+      "fast_test_file": "tests/user_stories/fast/test_us002_login_fast.py",
+      "realistic_test_file": "tests/user_stories/realistic/test_us002_login_realistic.py",
+      "dependencies": ["US-001"],
+      "priority": 1,
+      "estimated_duration_fast": 10,
+      "estimated_duration_realistic": 60,
+      "parallel_safe": true,
+      "environments": ["dev", "test", "staging", "prod"]
+    },
+    {
+      "story_id": "US-003",
+      "title": "User Dashboard",
+      "fast_test_file": "tests/user_stories/fast/test_us003_dashboard_fast.py",
+      "realistic_test_file": "tests/user_stories/realistic/test_us003_dashboard_realistic.py",
+      "dependencies": ["US-002"],
+      "priority": 1,
+      "estimated_duration_fast": 20,
+      "estimated_duration_realistic": 180,
+      "parallel_safe": true,
+      "environments": ["dev", "test", "staging", "prod"]
+    },
+    {
+      "story_id": "US-004",
+      "title": "Word Learning Session",
+      "fast_test_file": "tests/user_stories/fast/test_us004_learning_fast.py",
+      "realistic_test_file": "tests/user_stories/realistic/test_us004_learning_realistic.py",
+      "dependencies": ["US-003"],
+      "priority": 1,
+      "estimated_duration_fast": 25,
+      "estimated_duration_realistic": 300,
+      "parallel_safe": true,
+      "environments": ["dev", "test", "staging"]
+    },
+    {
+      "story_id": "US-005",
+      "title": "Progress Tracking",
+      "fast_test_file": "tests/user_stories/fast/test_us005_progress_fast.py",
+      "realistic_test_file": "tests/user_stories/realistic/test_us005_progress_realistic.py",
+      "dependencies": ["US-004"],
+      "priority": 2,
+      "estimated_duration_fast": 15,
+      "estimated_duration_realistic": 120,
+      "parallel_safe": true,
+      "environments": ["dev", "test", "staging", "prod"]
+    },
+    {
+      "story_id": "US-006",
+      "title": "Word Management",
+      "fast_test_file": "tests/user_stories/fast/test_us006_word_mgmt_fast.py",
+      "realistic_test_file": "tests/user_stories/realistic/test_us006_word_mgmt_realistic.py",
+      "dependencies": ["US-002"],
+      "priority": 2,
+      "estimated_duration_fast": 30,
+      "estimated_duration_realistic": 240,
+      "parallel_safe": false,
+      "environments": ["dev", "test", "staging"]
+    },
+    {
+      "story_id": "US-007",
+      "title": "Project Management",
+      "fast_test_file": "tests/user_stories/fast/test_us007_project_mgmt_fast.py",
+      "realistic_test_file": "tests/user_stories/realistic/test_us007_project_mgmt_realistic.py",
+      "dependencies": ["US-006"],
+      "priority": 2,
+      "estimated_duration_fast": 35,
+      "estimated_duration_realistic": 300,
+      "parallel_safe": false,
+      "environments": ["dev", "test", "staging"]
+    },
+    {
+      "story_id": "US-008",
+      "title": "Phoneme Practice",
+      "fast_test_file": "tests/user_stories/fast/test_us008_phoneme_fast.py",
+      "realistic_test_file": "tests/user_stories/realistic/test_us008_phoneme_realistic.py",
+      "dependencies": ["US-004"],
+      "priority": 3,
+      "estimated_duration_fast": 20,
+      "estimated_duration_realistic": 180,
+      "parallel_safe": true,
+      "environments": ["dev", "test", "staging"]
+    },
+    {
+      "story_id": "US-009",
+      "title": "Group Learning",
+      "fast_test_file": "tests/user_stories/fast/test_us009_groups_fast.py",
+      "realistic_test_file": "tests/user_stories/realistic/test_us009_groups_realistic.py",
+      "dependencies": ["US-003", "US-004"],
+      "priority": 3,
+      "estimated_duration_fast": 40,
+      "estimated_duration_realistic": 360,
+      "parallel_safe": true,
+      "environments": ["dev", "test", "staging"]
+    },
+    {
+      "story_id": "US-010",
+      "title": "Video Learning Integration",
+      "fast_test_file": "tests/user_stories/fast/test_us010_video_fast.py",
+      "realistic_test_file": "tests/user_stories/realistic/test_us010_video_realistic.py",
+      "dependencies": ["US-004"],
+      "priority": 3,
+      "estimated_duration_fast": 30,
+      "estimated_duration_realistic": 240,
+      "parallel_safe": true,
+      "environments": ["dev", "test", "staging"]
+    },
+    {
+      "story_id": "US-011",
+      "title": "Firebase Environment Management",
+      "fast_test_file": "tests/user_stories/fast/test_us011_firebase_fast.py",
+      "realistic_test_file": "tests/user_stories/realistic/test_us011_firebase_realistic.py",
+      "dependencies": [],
+      "priority": 4,
+      "estimated_duration_fast": 45,
+      "estimated_duration_realistic": 600,
+      "parallel_safe": false,
+      "environments": ["dev", "test", "staging", "prod"]
+    },
+    {
+      "story_id": "US-012",
+      "title": "User Analytics",
+      "fast_test_file": "tests/user_stories/fast/test_us012_analytics_fast.py",
+      "realistic_test_file": "tests/user_stories/realistic/test_us012_analytics_realistic.py",
+      "dependencies": ["US-003"],
+      "priority": 4,
+      "estimated_duration_fast": 25,
+      "estimated_duration_realistic": 200,
+      "parallel_safe": true,
+      "environments": ["dev", "test", "staging", "prod"]
+    },
+    {
+      "story_id": "US-013",
+      "title": "Mobile Responsive Design",
+      "fast_test_file": "tests/user_stories/fast/test_us013_mobile_fast.py",
+      "realistic_test_file": "tests/user_stories/realistic/test_us013_mobile_realistic.py",
+      "dependencies": ["US-001", "US-002", "US-003"],
+      "priority": 2,
+      "estimated_duration_fast": 35,
+      "estimated_duration_realistic": 300,
+      "parallel_safe": true,
+      "environments": ["dev", "test", "staging", "prod"]
+    },
+    {
+      "story_id": "US-014",
+      "title": "Accessibility Compliance",
+      "fast_test_file": "tests/user_stories/fast/test_us014_accessibility_fast.py",
+      "realistic_test_file": "tests/user_stories/realistic/test_us014_accessibility_realistic.py",
+      "dependencies": ["US-001", "US-002", "US-003"],
+      "priority": 2,
+      "estimated_duration_fast": 40,
+      "estimated_duration_realistic": 420,
+      "parallel_safe": true,
+      "environments": ["dev", "test", "staging", "prod"]
+    }
+  ],
+  "test_execution_notes": {
+    "parallel_execution": "Tests marked as parallel_safe=true can run concurrently within their priority group",
+    "environment_restrictions": "Production tests are read-only and limited to safe operations",
+    "dependencies": "Tests with dependencies must wait for prerequisite stories to complete",
+    "time_estimates": "Duration estimates include setup, execution, and teardown phases",
+    "playwright_mcp": "All tests use Playwright MCP with headed Chromium for realistic browser behavior"
+  }
+}

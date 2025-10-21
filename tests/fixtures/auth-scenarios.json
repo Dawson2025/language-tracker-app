@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Valid Registration",
+    "data": {
+      "username": "newuser",
+      "email": "newuser@example.com",
+      "password": "StrongPassword789!",
+      "confirmPassword": "StrongPassword789!"
+    },
+    "expectedResult": "success"
+  },
+  {
+    "name": "Invalid Email Format",
+    "data": {
+      "username": "testuser",
+      "email": "invalid-email",
+      "password": "ValidPassword123!",
+      "confirmPassword": "ValidPassword123!"
+    },
+    "expectedResult": "validation_error"
+  },
+  {
+    "name": "Weak Password",
+    "data": {
+      "username": "testuser",
+      "email": "test@example.com",
+      "password": "123",
+      "confirmPassword": "123"
+    },
+    "expectedResult": "validation_error"
+  }
+]

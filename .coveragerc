@@ -1,0 +1,48 @@
+# Coverage.py configuration for Hard Testing Rule Enforcement
+# Language Tracker Project
+
+[run]
+source = features/
+omit = 
+    */tests/*
+    */test_*
+    */__pycache__/*
+    */migrations/*
+    */venv/*
+    */env/*
+    setup.py
+    manage.py
+    conftest.py
+
+parallel = true
+branch = true
+
+[report]
+# Hard Testing Rule: 90% minimum coverage
+fail_under = 90
+show_missing = true
+skip_covered = false
+precision = 1
+
+# Exclude lines from coverage
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if self.debug:
+    if settings.DEBUG
+    raise AssertionError
+    raise NotImplementedError
+    if 0:
+    if __name__ == .__main__.:
+    class .*\bProtocol\):
+    @(abc\.)?abstractmethod
+
+[html]
+directory = test-results/htmlcov
+title = Language Tracker Coverage Report
+
+[xml]
+output = test-results/coverage.xml
+
+[json]
+output = test-results/coverage.json

@@ -1,0 +1,16 @@
+<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="6.089652">
+<testsuite name="e2e\auth-api-test.spec.js" timestamp="2025-10-21T12:50:40.855Z" hostname="chromium-headed" tests="6" failures="0" skipped="0" time="4.228" errors="0">
+<testcase name="Authentication API Integration › should register a new user via API" classname="e2e\auth-api-test.spec.js" time="0.55">
+</testcase>
+<testcase name="Authentication API Integration › should login with registered credentials" classname="e2e\auth-api-test.spec.js" time="1.361">
+</testcase>
+<testcase name="Authentication API Integration › should handle invalid login credentials" classname="e2e\auth-api-test.spec.js" time="0.519">
+</testcase>
+<testcase name="Authentication API Integration › should validate session token correctly" classname="e2e\auth-api-test.spec.js" time="0.317">
+</testcase>
+<testcase name="Authentication API Integration › should get app info correctly" classname="e2e\auth-api-test.spec.js" time="0.32">
+</testcase>
+<testcase name="Authentication API Integration › should handle logout endpoint" classname="e2e\auth-api-test.spec.js" time="1.161">
+</testcase>
+</testsuite>
+</testsuites>

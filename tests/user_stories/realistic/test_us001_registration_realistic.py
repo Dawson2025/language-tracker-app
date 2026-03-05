@@ -1,3 +1,4 @@
+# resource_id: d6aa36a6-b4fb-4e00-84c7-453ba01a7821
 """
 US-001: User Registration - Realistic Test
 Full end-to-end registration workflow with real Firebase backend integration.

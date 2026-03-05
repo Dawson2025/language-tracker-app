@@ -1,3 +1,4 @@
+// resource_id: a5572b15-25c8-43ee-ab8e-b81950d99a47
 /**
  * Loading Spinner Component
  * Language Tracker Common Components

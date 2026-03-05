@@ -1,26 +1,34 @@
+---
+resource_id: "711304fe-e6cb-4bbf-b31f-45bb1e918703"
+---
 # Firebase Setup Guide
 
 Complete guide to setting up Firebase for Lang Trak following Google's best practices.
 
+<!-- section_id: "d5b98c7b-1a35-4a0c-88cd-041cdbdef982" -->
 ## Overview
 
 This project implements Google's recommended Firebase architecture:
 - **Local emulators** for unit testing only (fast, free, isolated)
 - **Real Firebase projects** for development, staging, and production
 
+<!-- section_id: "9d1aaa8f-e765-4f1a-b60a-b6790f1a8e54" -->
 ## Prerequisites
 
+<!-- section_id: "a8f4d55e-c219-4c6b-a765-9b03073daee9" -->
 ### Required Software
 - **WSL Ubuntu** (mandatory for shell scripts)
 - **Node.js** 16+ 
 - **Firebase CLI**: `npm install -g firebase-tools`
 - **Google Cloud CLI** (recommended): [Install Guide](https://cloud.google.com/sdk/docs/install)
 
+<!-- section_id: "f661b99b-bfe4-4d55-911b-d7346552248a" -->
 ### Required Permissions
 - Google account with access to `lang-trak-*` Firebase projects
 - Service account keys properly configured
 - IAM roles: Firebase Admin, Firestore User, Cloud Functions Developer
 
+<!-- section_id: "0d901ab3-83c1-4d3a-b69b-f8d87169db1b" -->
 ## Firebase Projects
 
 | Environment | Project ID | Purpose | URL |
@@ -30,8 +38,10 @@ This project implements Google's recommended Firebase architecture:
 | **Staging** | `lang-trak-staging` | Pre-production testing | `https://lang-trak-staging.web.app` |
 | **Production** | `lang-trak-prod` | Live application | `https://lang-trak-prod.web.app` |
 
+<!-- section_id: "bb8ad27f-0e03-4ab6-a060-77b3422f7e40" -->
 ## Initial Setup
 
+<!-- section_id: "8d5e9330-7fb6-4be7-84cd-7ba3c08f7d3f" -->
 ### 1. Authenticate with Firebase
 
 ```bash
@@ -44,6 +54,7 @@ firebase projects:list
 # Should see all lang-trak projects
 ```
 
+<!-- section_id: "8bd1f511-cdc0-4172-97de-10803e3bbf25" -->
 ### 2. Authenticate with Google Cloud (Optional but Recommended)
 
 ```bash
@@ -54,6 +65,7 @@ gcloud auth login
 gcloud config set project lang-trak-dev
 ```
 
+<!-- section_id: "6776c598-dced-4736-abbd-3a4089fb4233" -->
 ### 3. Verify Project Access
 
 ```bash
@@ -63,10 +75,12 @@ firebase use lang-trak-staging && firebase projects:list --filter="lang-trak-sta
 firebase use lang-trak-prod && firebase projects:list --filter="lang-trak-prod"
 ```
 
+<!-- section_id: "d1cfb099-dba2-4aa9-a95a-273dded3e22f" -->
 ## Environment Scripts
 
 All environment scripts are located in `scripts/` directory and **must be run in WSL**.
 
+<!-- section_id: "709d01ac-c108-449f-b4bd-4442c59dd0e3" -->
 ### Development Environment
 
 ```bash
@@ -80,6 +94,7 @@ bash scripts/setup-dev-env.sh
 - Switches Firebase CLI to development project
 - Sets Google Cloud project to development
 
+<!-- section_id: "00458616-0cc1-421b-aee8-2895da2e90d2" -->
 ### Unit Testing Environment  
 
 ```bash
@@ -94,6 +109,7 @@ bash scripts/setup-test-env.sh
 - Configures emulator host variables
 - **Does NOT switch Firebase projects** (uses emulators)
 
+<!-- section_id: "91f1ce68-b008-4885-8047-d96afc6da137" -->
 ### Staging Environment
 
 ```bash
@@ -107,6 +123,7 @@ bash scripts/setup-staging-env.sh
 - Switches Firebase CLI to staging project
 - Sets Google Cloud project to staging
 
+<!-- section_id: "512ad691-03e1-4211-802f-7558e54d9ad9" -->
 ### Production Environment
 
 ```bash
@@ -121,8 +138,10 @@ bash scripts/setup-prod-env.sh
 - Switches Firebase CLI to production project
 - Sets Google Cloud project to production
 
+<!-- section_id: "053a4262-9b26-4a81-80d1-6e71f4d4c899" -->
 ## Firebase Emulator Setup
 
+<!-- section_id: "543a4952-81ca-40b6-ae9f-0025b48c0ddd" -->
 ### Configuration
 
 Emulator settings in `firebase.json`:
@@ -147,6 +166,7 @@ Emulator settings in `firebase.json`:
 }
 ```
 
+<!-- section_id: "df417d48-a355-4f97-8adb-00bdfc2b3797" -->
 ### Starting Emulators
 
 ```bash
@@ -164,12 +184,14 @@ npm run emulator:start    # Start emulators
 npm run emulator:ui       # Start with UI
 ```
 
+<!-- section_id: "311ca741-ea7f-4b82-970a-9495f67edea0" -->
 ### Emulator URLs
 
 - **Firestore Emulator:** `http://127.0.0.1:8088`
 - **Auth Emulator:** `http://127.0.0.1:9099`  
 - **Emulator UI:** `http://127.0.0.1:4002`
 
+<!-- section_id: "7c0e3463-4a8a-4ac4-aaec-59d350628a86" -->
 ## NPM Scripts Integration
 
 The `package.json` includes scripts that work with WSL:
@@ -187,8 +209,10 @@ The `package.json` includes scripts that work with WSL:
 }
 ```
 
+<!-- section_id: "a6f14b16-a57c-4e0f-bd1e-e668aaaf2f58" -->
 ## Security Rules
 
+<!-- section_id: "3d201e0b-dd9d-4d36-b1b3-79c4e8b5f8c7" -->
 ### Firestore Rules
 
 Located in `firestore.rules`:
@@ -205,6 +229,7 @@ service cloud.firestore {
 }
 ```
 
+<!-- section_id: "24cf3167-cf0c-48db-a056-4a9954542b8a" -->
 ### Deploying Rules
 
 ```bash
@@ -221,8 +246,10 @@ bash scripts/setup-prod-env.sh
 firebase deploy --only firestore:rules
 ```
 
+<!-- section_id: "612001ae-8864-4390-b931-71eb2b141240" -->
 ## Development Workflow
 
+<!-- section_id: "481db4bd-f84e-499d-9e06-94be8b7a3595" -->
 ### Daily Development
 
 ```bash
@@ -241,6 +268,7 @@ npm run emulator:start  # In separate terminal
 npm test
 ```
 
+<!-- section_id: "8fd4494e-586e-45fa-bd4a-7c423c254888" -->
 ### Deployment Workflow
 
 ```bash
@@ -261,8 +289,10 @@ bash scripts/setup-prod-env.sh
 firebase deploy  # Includes safety confirmations
 ```
 
+<!-- section_id: "91f452df-ae4c-4108-98a6-d24a1325ff09" -->
 ## Troubleshooting
 
+<!-- section_id: "c87c61cd-73cc-4e94-976a-93f9db1e8b7d" -->
 ### Common Issues
 
 #### 1. Scripts Won't Execute
@@ -341,6 +371,7 @@ cd /home/dawson/code/lang-trak-in-progress
 bash scripts/setup-dev-env.sh
 ```
 
+<!-- section_id: "94400a5c-f8b9-486d-8d68-b6b3d6f18225" -->
 ### Advanced Troubleshooting
 
 #### Check Service Account Permissions
@@ -375,8 +406,10 @@ curl http://127.0.0.1:8088
 curl http://127.0.0.1:9099
 ```
 
+<!-- section_id: "cf4782d9-2135-468c-a2fc-85cc84477d11" -->
 ## Environment Variables Reference
 
+<!-- section_id: "6088bb4d-a082-4088-8388-f9c94b4c29cd" -->
 ### Development Environment
 ```bash
 PROJECT_ID="lang-trak-dev"
@@ -385,6 +418,7 @@ FIREBASE_ENV="development"
 # Google Cloud project: lang-trak-dev
 ```
 
+<!-- section_id: "43d0a996-7953-4d74-94fb-708958c93ab2" -->
 ### Test Environment (Emulator)
 ```bash
 NODE_ENV="test"
@@ -395,6 +429,7 @@ FIREBASE_AUTH_EMULATOR_HOST="127.0.0.1:9099"
 # Firebase CLI project: unchanged (uses emulator)
 ```
 
+<!-- section_id: "65cc8e87-d38a-4f2a-bede-20451f7d051b" -->
 ### Staging Environment
 ```bash
 PROJECT_ID="lang-trak-staging"
@@ -403,6 +438,7 @@ FIREBASE_ENV="staging"
 # Google Cloud project: lang-trak-staging
 ```
 
+<!-- section_id: "a903c3b9-58a5-41b5-ba3b-1cb780a8a696" -->
 ### Production Environment
 ```bash
 PROJECT_ID="lang-trak-prod"
@@ -411,6 +447,7 @@ FIREBASE_ENV="production"
 # Google Cloud project: lang-trak-prod
 ```
 
+<!-- section_id: "6478bc4f-3921-43d3-b721-1f75ad980d54" -->
 ## Best Practices
 
 1. **Always use WSL** for Firebase commands and scripts
@@ -421,6 +458,7 @@ FIREBASE_ENV="production"
 6. **Use safety confirmations** for production deployments
 7. **Monitor logs** after deployments: `firebase functions:log`
 
+<!-- section_id: "0ab33a89-6c25-4a88-94b9-b36bb895ad55" -->
 ## Getting Help
 
 - **Operational Status:** [docs/OPERATIONAL_STATUS.md](OPERATIONAL_STATUS.md)

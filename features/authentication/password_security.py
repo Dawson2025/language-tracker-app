@@ -1,3 +1,4 @@
+# resource_id: b84ba57c-453d-4302-95e9-491f96830e45
 """
 Password Security Module
 Language Tracker Authentication Feature

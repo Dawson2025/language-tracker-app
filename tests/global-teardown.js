@@ -1,3 +1,4 @@
+// resource_id: 9d9cc25b-0e7e-4718-828d-37673b1d0357
 /**
  * Playwright Global Teardown
  * Cleans up test environment after E2E and user story testing

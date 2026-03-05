@@ -1,3 +1,4 @@
+// resource_id: ba5c78e9-dc05-4dcd-9429-89432d63da58
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 

@@ -1,5 +1,9 @@
+---
+resource_id: "4a6e3584-8635-4ba2-9f34-48fa4fcf0aa6"
+---
 # TTS Fix Instructions
 
+<!-- section_id: "c7d222e9-3db8-45d1-9dea-86e88f6eb6ec" -->
 ## Problem Identified
 
 The TTS is not working because:
@@ -8,6 +12,7 @@ The TTS is not working because:
 2. **Missing Environment Variables**: Azure Speech Service credentials are not configured  
 3. **Virtual Environment**: The app needs to run with the virtual environment activated
 
+<!-- section_id: "e5ac9c3c-84b7-47f5-a876-fd8df8f02a4d" -->
 ## Current Status
 
 - ✅ Azure Speech SDK is installed (`azure-cognitiveservices-speech 1.46.0`)
@@ -15,8 +20,10 @@ The TTS is not working because:
 - ❌ Azure credentials not configured
 - ❌ App not running in virtual environment
 
+<!-- section_id: "8fe3358b-1cb8-46e3-b678-dd180afa2259" -->
 ## Solution
 
+<!-- section_id: "a4ed290e-2a0d-4959-8df2-88d058f12add" -->
 ### 1. Always Run in Virtual Environment
 
 **Instead of:**
@@ -29,6 +36,7 @@ wsl python app.py
 wsl bash -c "cd /home/dawson/code/lang-trak-in-progress && source .venv/bin/activate && PORT=5001 python app.py"
 ```
 
+<!-- section_id: "7833100d-81c9-44ee-b353-90068ae3b175" -->
 ### 2. Configure Azure Speech Service (Optional)
 
 If you want real TTS instead of fake audio:
@@ -51,6 +59,7 @@ If you want real TTS instead of fake audio:
    source ~/.bashrc
    ```
 
+<!-- section_id: "2c9a59d4-08d6-48b8-b8ff-470fdea66aa6" -->
 ### 3. Test TTS Functionality
 
 Create a simple test:
@@ -66,13 +75,16 @@ print(f\"Audio generated: {len(result) if result else 0} chars, Backend: {ipa_tt
 '"
 ```
 
+<!-- section_id: "918612ef-69db-4bb1-9aac-aab037ce546e" -->
 ## Quick Fix Commands
 
+<!-- section_id: "0d2e24c0-9c3b-45d3-a17c-ec263914b3d9" -->
 ### Run Flask App with TTS Working:
 ```bash
 wsl bash -c "cd /home/dawson/code/lang-trak-in-progress && source .venv/bin/activate && PORT=5001 python app.py"
 ```
 
+<!-- section_id: "37beeff7-0bed-4c44-92a1-55b12225a3af" -->
 ### Test TTS API Endpoint:
 ```bash
 curl -X POST http://localhost:5001/api/tts/ipa \
@@ -80,6 +92,7 @@ curl -X POST http://localhost:5001/api/tts/ipa \
   -d '{"ipa": "hɛloʊ"}'
 ```
 
+<!-- section_id: "ae80f5b2-e9e9-40ca-9677-48aa5ff16d97" -->
 ## Current Fallback
 
 The TTS engine automatically falls back to fake TTS when:
@@ -89,6 +102,7 @@ The TTS engine automatically falls back to fake TTS when:
 
 The fake TTS returns a deterministic base64-encoded WAV file, so the app still works for development and testing.
 
+<!-- section_id: "cd04ed08-1437-4824-afa3-10803f78c141" -->
 ## Expected Behavior
 
 - **With Azure configured**: Real TTS audio in MP3 format

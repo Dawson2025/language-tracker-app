@@ -1,31 +1,40 @@
+---
+resource_id: "9b88cbce-fec3-44ff-a4c9-f2cb75ac376b"
+---
 # Language Tracker User Stories
 
 This document defines all user stories with their corresponding features and sub-features. Every code change must reference a user story from this document.
 
+<!-- section_id: "72b752dc-dda6-46aa-87a6-627fc01796fa" -->
 ## Story Format
 **US-XXX**: [Story Title]  
 **As a** [user role]  
 **I want** [goal/desire]  
 **So that** [benefit/value]
 
+<!-- section_id: "c5390865-57d7-4aef-a213-16c9c108b9aa" -->
 ### Features
 - Feature 1
   - Sub-feature 1.1
   - Sub-feature 1.2
 - Feature 2
 
+<!-- section_id: "149d8119-35e3-4062-a2aa-441db80bf065" -->
 ### Acceptance Criteria
 - [ ] Criterion 1
 - [ ] Criterion 2
 
+<!-- section_id: "d01624ae-39d1-4b47-828a-fdb939b72a2f" -->
 ### Test Coverage Requirements
 - Fast Test: [Description]
 - Realistic Test: [Description]
 
 ---
 
+<!-- section_id: "79c53b5e-be16-4a78-89cb-f31c5571afe6" -->
 ## Core Authentication & User Management
 
+<!-- section_id: "edffdceb-1895-4da6-a62a-a6ffdcb94980" -->
 ### US-001: User Registration
 **As a** new user  
 **I want** to create an account with email and password  
@@ -47,6 +56,7 @@ This document defines all user stories with their corresponding features and sub
 - [ ] Verification email is sent
 - [ ] User can verify email and activate account
 
+<!-- section_id: "71b5ebea-0d6b-4183-bf45-b8f00af59615" -->
 ### US-002: User Login
 **As a** registered user  
 **I want** to log into my account  
@@ -67,6 +77,7 @@ This document defines all user stories with their corresponding features and sub
 - [ ] Session persists across browser sessions if "remember me" is checked
 - [ ] User can reset forgotten password
 
+<!-- section_id: "92da1f13-ff96-49db-a5cc-4e8ea874d87a" -->
 ### US-003: User Dashboard
 **As a** logged-in user  
 **I want** to see my learning progress overview  
@@ -91,8 +102,10 @@ This document defines all user stories with their corresponding features and sub
 
 ---
 
+<!-- section_id: "2d4080bf-deda-444f-a953-480f7e375e26" -->
 ## Language Learning Core Features
 
+<!-- section_id: "f07cb7d8-e7dd-4e93-a89d-509b662233fb" -->
 ### US-004: Word Learning Session
 **As a** learner  
 **I want** to practice new vocabulary words  
@@ -119,6 +132,7 @@ This document defines all user stories with their corresponding features and sub
 - [ ] Responses are tracked accurately
 - [ ] Difficulty adapts based on performance
 
+<!-- section_id: "7684b24c-ee0f-4efd-802c-613d69d772b7" -->
 ### US-005: Progress Tracking
 **As a** learner  
 **I want** to see my learning progress over time  
@@ -147,8 +161,10 @@ This document defines all user stories with their corresponding features and sub
 
 ---
 
+<!-- section_id: "c4ce86be-09cf-4f40-85d7-9756708c8ef2" -->
 ## Content Management
 
+<!-- section_id: "03546a75-f9c6-4906-9e5c-ad472517e877" -->
 ### US-006: Word Management
 **As an** admin  
 **I want** to manage the word database  
@@ -175,6 +191,7 @@ This document defines all user stories with their corresponding features and sub
 - [ ] Content goes through quality review
 - [ ] Organization system is intuitive
 
+<!-- section_id: "2dcbbcf2-a684-41ef-815e-1a186c3054e6" -->
 ### US-007: Project Management
 **As an** admin  
 **I want** to organize content into projects  
@@ -202,8 +219,10 @@ This document defines all user stories with their corresponding features and sub
 
 ---
 
+<!-- section_id: "d4b307d2-8fcf-4786-a01f-e9ceef4b3c64" -->
 ## Advanced Features
 
+<!-- section_id: "c624cded-99a4-447a-9952-eacacb95b0cb" -->
 ### US-008: Phoneme Practice
 **As a** learner  
 **I want** to practice individual phonemes  
@@ -229,6 +248,7 @@ This document defines all user stories with their corresponding features and sub
 - [ ] Assessment provides useful feedback
 - [ ] Progress is tracked accurately
 
+<!-- section_id: "9d246e3e-862b-4d01-804b-9452c3cbeaf3" -->
 ### US-009: Group Learning
 **As a** learner  
 **I want** to join study groups  
@@ -254,6 +274,7 @@ This document defines all user stories with their corresponding features and sub
 - [ ] Communication tools are effective
 - [ ] Group progress is visible
 
+<!-- section_id: "56a5b83f-df70-4a28-b8bf-de65fbd5fb80" -->
 ### US-010: Video Learning Integration
 **As a** learner  
 **I want** to watch educational videos  
@@ -281,8 +302,10 @@ This document defines all user stories with their corresponding features and sub
 
 ---
 
+<!-- section_id: "36bf5115-7476-4550-84df-3c4269b792f2" -->
 ## System Administration
 
+<!-- section_id: "541eccd4-f5d6-436c-a743-9f1ff1d1566b" -->
 ### US-011: Firebase Environment Management
 **As a** developer  
 **I want** to manage multiple Firebase environments  
@@ -308,6 +331,7 @@ This document defines all user stories with their corresponding features and sub
 - [ ] Monitoring provides actionable insights
 - [ ] Rollbacks can be performed when needed
 
+<!-- section_id: "3194024c-6588-43b3-95fe-8a62e453a623" -->
 ### US-012: User Analytics
 **As an** admin  
 **I want** to view user analytics and system metrics  
@@ -335,8 +359,10 @@ This document defines all user stories with their corresponding features and sub
 
 ---
 
+<!-- section_id: "a30f25c0-0005-4563-a602-a3cd7ed65a9b" -->
 ## Mobile and Accessibility
 
+<!-- section_id: "9806298a-0b1e-4514-a181-9c46285fdb6b" -->
 ### US-013: Mobile Responsive Design
 **As a** mobile user  
 **I want** the app to work well on my phone/tablet  
@@ -362,6 +388,7 @@ This document defines all user stories with their corresponding features and sub
 - [ ] Performance is optimized for mobile
 - [ ] Cross-platform compatibility is maintained
 
+<!-- section_id: "923c4535-6e7e-4791-aed8-8fa7051117bd" -->
 ### US-014: Accessibility Compliance
 **As a** user with disabilities  
 **I want** the app to be accessible  

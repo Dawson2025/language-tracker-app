@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# resource_id: 680456b7-81bd-47a0-a075-4256140cfb17
 """
 TTS Test Script
 Debug TTS functionality and Azure configuration

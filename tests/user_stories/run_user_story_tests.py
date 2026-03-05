@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# resource_id: b7177e28-47c8-433c-9811-756f6c4f9b11
 """
 User Story Test Runner with Playwright MCP Integration
 

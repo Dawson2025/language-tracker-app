@@ -1,3 +1,4 @@
+# resource_id: d3a7fedc-3b72-4457-b567-9788c736d8d0
 """
 User Story Test Automation Configuration
 

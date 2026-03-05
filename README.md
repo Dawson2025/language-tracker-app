@@ -1,7 +1,11 @@
+---
+resource_id: "fa08fd85-0422-45cb-95e6-1939a2e59a8b"
+---
 # Lang Trak
 
 A language learning tracking application built with Next.js and Firebase.
 
+<!-- section_id: "1a638ae9-0733-4c1c-bcf4-3b4dcabf8d6a" -->
 ## 🚀 Quick Start
 
 **Prerequisites:** WSL Ubuntu, Node.js, Firebase CLI, authenticated Google Cloud account
@@ -26,6 +30,7 @@ npm run emulator:start
 npm test
 ```
 
+<!-- section_id: "023f560e-0e61-4e49-a21c-a1c333a297e8" -->
 ## 🏗️ Architecture
 
 - **Frontend:** Next.js with TypeScript
@@ -33,6 +38,7 @@ npm test
 - **Testing:** Firebase Emulators for unit tests
 - **Environments:** Development, Staging, Production
 
+<!-- section_id: "c0da5d66-b191-41e8-90bc-1bd1f260afef" -->
 ## 🔥 Firebase Setup
 
 This project uses **Google's recommended Firebase best practices**:
@@ -42,6 +48,7 @@ This project uses **Google's recommended Firebase best practices**:
 - **Staging:** Real Firebase project (`lang-trak-staging`) 
 - **Production:** Real Firebase project (`lang-trak-prod`)
 
+<!-- section_id: "fde7f111-7494-48f5-a3d1-022de4d9f541" -->
 ### Environment Scripts
 
 All scripts must be run in **WSL terminal**:
@@ -60,6 +67,7 @@ bash scripts/setup-staging-env.sh
 bash scripts/setup-prod-env.sh
 ```
 
+<!-- section_id: "39f31e61-d527-4a57-a380-0d52c50fa3db" -->
 ### NPM Scripts
 
 ```bash
@@ -71,6 +79,7 @@ npm run emulator:start    # Start Firebase emulator
 npm run emulator:ui       # Start emulator with UI
 ```
 
+<!-- section_id: "e65988bd-d14e-4e25-a3a1-bcee3de5d5c3" -->
 ## 📁 Project Structure
 
 ```
@@ -84,6 +93,7 @@ lang-trak-in-progress/
 └── package.json       # NPM configuration
 ```
 
+<!-- section_id: "a92fa10b-58df-4520-bf9c-c1e74774f782" -->
 ## 🛠️ Development Workflow
 
 1. **Start Development Session**
@@ -111,6 +121,7 @@ lang-trak-in-progress/
    firebase deploy  # Includes safety confirmations
    ```
 
+<!-- section_id: "89059950-e1e8-400f-a9df-43b39cfd2a75" -->
 ## 🌐 Environment URLs
 
 - **Development:** `https://lang-trak-dev.web.app`
@@ -118,6 +129,7 @@ lang-trak-in-progress/
 - **Production:** `https://lang-trak-prod.web.app`
 - **Emulator UI:** `http://127.0.0.1:4002`
 
+<!-- section_id: "4635927e-4f75-448d-8cfb-38f5c5c5666e" -->
 ## 📚 Documentation
 
 - [Quick Start Guide](docs/QUICK_START.md)
@@ -127,6 +139,7 @@ lang-trak-in-progress/
 - [Production Readiness](docs/PRODUCTION_READINESS.md)
 - [Operational Status](docs/OPERATIONAL_STATUS.md)
 
+<!-- section_id: "df943f90-68c1-46b8-9780-d1e9c5f60f2f" -->
 ## 🚨 Important Notes
 
 **🚨 HARD RULE: ALL AUTOMATED TESTS MUST PASS BEFORE ANY PROGRESSION**
@@ -141,16 +154,19 @@ lang-trak-in-progress/
 - **Production deployments require confirmation** - safety warnings included
 - **Environment isolation is critical** - each environment has separate Firebase projects
 
+<!-- section_id: "eaebc073-e14e-4b39-8546-a28709760a85" -->
 ## 🧪 Testing Requirements
 
 **All code changes MUST include comprehensive test coverage:**
 
+<!-- section_id: "b2afe700-dbe0-47ff-a339-21ea1a0ada07" -->
 ### Test Types Required
 - **Unit Tests**: Fast (<30s), isolated component testing
 - **Integration Tests**: API and database interaction testing
 - **E2E Tests**: Full user workflows with Playwright + headed Chromium
 - **User Story Tests**: Both fast and realistic versions for each user story
 
+<!-- section_id: "1b9b0950-8e7d-4cee-ae85-b4e76be7e044" -->
 ### Running Tests Locally
 ```bash
 # Unit tests
@@ -171,12 +187,14 @@ coverage run -m pytest tests/ --verbose
 coverage report --show-missing --fail-under=90
 ```
 
+<!-- section_id: "631ae3c6-e1f0-4054-abf6-1b5ac38b6018" -->
 ### CI/CD Enforcement
 - **GitHub Actions**: Automatically runs all tests on PR creation
 - **Branch Protection**: Main branch requires all checks to pass
 - **No Override**: Manual bypassing of test failures is not allowed
 - **Coverage Requirement**: Minimum 90% code coverage enforced
 
+<!-- section_id: "fb5d585e-11d4-4935-82f0-7bdc987e2b77" -->
 ## 🔧 Troubleshooting
 
 **Common Issues:**
@@ -192,10 +210,12 @@ coverage report --show-missing --fail-under=90
 - Review [Firebase Setup Guide](docs/FIREBASE_SETUP.md) for detailed instructions
 - See [Production Readiness](docs/PRODUCTION_READINESS.md) for deployment checklists
 
+<!-- section_id: "f3fd7ad5-0ae0-4377-b586-e3598954a9a0" -->
 ## 📄 License
 
 [Add license information]
 
+<!-- section_id: "5d75293d-0f1e-4173-8123-e0cea5f98053" -->
 ## 🤝 Contributing
 
 [Add contributing guidelines]

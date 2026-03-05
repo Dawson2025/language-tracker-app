@@ -1,3 +1,4 @@
+// resource_id: b3b1dc0d-d7da-4a53-8373-943d16c645fc
 /**
  * Google Sign-In Button Component
  * Language Tracker Authentication Feature

@@ -1,3 +1,4 @@
+# resource_id: 2e71b689-6460-495a-bdcd-043a962490c9
 # Quick test for Tavily MCP server
 Write-Host "Testing Tavily MCP Server..." -ForegroundColor Green
 

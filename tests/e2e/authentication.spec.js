@@ -1,3 +1,4 @@
+// resource_id: b4d48d70-d171-4e14-89bc-41639d789745
 /**
  * E2E Authentication Tests
  * Implements Hard Testing Rule with Playwright MCP Server + Headed Chromium

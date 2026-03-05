@@ -1,3 +1,4 @@
+// resource_id: 21d41d3d-89ac-4723-a986-2a1983d3d2c4
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { spawn } from "node:child_process";

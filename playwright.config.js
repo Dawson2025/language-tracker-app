@@ -1,3 +1,4 @@
+// resource_id: a62fba2b-1778-411b-a07b-b092a8116f8b
 // @ts-check
 const { defineConfig, devices } = require('@playwright/test');
 

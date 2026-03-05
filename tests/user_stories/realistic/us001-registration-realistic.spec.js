@@ -1,3 +1,4 @@
+// resource_id: 4d342b79-9e0c-4a47-b2dd-c5527d0a00ec
 /**
  * US-001: User Registration - Realistic Tests
  * Implements Hard Testing Rule with Playwright MCP Server + Headed Chromium

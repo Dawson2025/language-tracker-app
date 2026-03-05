@@ -4,5 +4,6 @@
   "type": "module",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.20.1"
-  }
+  },
+  "file_id": "1b222c39-76f2-46a2-ae42-f7b1fafb0ee6"
 }

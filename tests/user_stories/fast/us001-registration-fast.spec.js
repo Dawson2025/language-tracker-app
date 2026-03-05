@@ -1,3 +1,4 @@
+// resource_id: 3f6a7803-c866-4af9-8e42-2a8431d01457
 /**
  * US-001: User Registration - Fast Tests
  * Implements Hard Testing Rule with Playwright MCP Server + Headed Chromium

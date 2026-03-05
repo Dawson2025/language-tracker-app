@@ -1,3 +1,4 @@
+// resource_id: 572a0caf-fe2e-471b-9471-05c3b56021db
 import React from 'react';
 
 interface AlertProps {

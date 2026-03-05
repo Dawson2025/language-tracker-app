@@ -1,3 +1,4 @@
+# resource_id: 46b332a0-5789-4743-ba40-a4b6c851ea3b
 """
 US-001: User Registration - Fast Test
 Fast validation of core registration functionality with minimal UI interactions and mocked dependencies.

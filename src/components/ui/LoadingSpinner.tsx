@@ -1,3 +1,4 @@
+// resource_id: 1008a5de-d1f9-4560-850c-ed944ab787ef
 import React from 'react';
 
 interface LoadingSpinnerProps {

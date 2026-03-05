@@ -1,3 +1,4 @@
+# resource_id: 5feee40a-e66b-4da1-ab32-4c2e90d8f09e
 -- Authentication Feature Database Schema
 -- Language Tracker Project
 -- Created via GitHub Spec Kit Implementation Phase

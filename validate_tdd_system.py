@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# resource_id: 4407d1f6-6045-4b83-871d-5064579801a5
 """
 TDD System Validation Script
 

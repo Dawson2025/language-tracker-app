@@ -1,3 +1,4 @@
+// resource_id: dd7cfebb-f350-488f-b03e-c4373f2abded
 const { test, expect } = require('@playwright/test');
 
 test.describe('Headed Browser Test', () => {

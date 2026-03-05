@@ -1,3 +1,4 @@
+# resource_id: dc51431c-7db8-4b7f-9af0-ffa97fb86f53
 # Setup script for MCP servers in Warp
 # This script helps configure the required environment variables
 

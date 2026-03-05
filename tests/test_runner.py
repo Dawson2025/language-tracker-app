@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# resource_id: b919dab1-8550-4f3f-803e-f8e0e9bf471b
 """
 Comprehensive Test Runner for Hard Testing Rule Enforcement
 Language Tracker - CI/CD Integration

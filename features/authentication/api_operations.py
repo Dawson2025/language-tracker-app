@@ -1,3 +1,4 @@
+# resource_id: 59067b9a-79ec-49be-8e7e-6cf8f57518d5
 """
 Local Authentication API Operations
 Language Tracker Authentication Feature

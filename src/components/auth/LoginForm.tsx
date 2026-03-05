@@ -1,3 +1,4 @@
+// resource_id: 2e3a4de5-ad74-408e-8789-4d4c78446611
 /**
  * Login Form Component
  * Language Tracker Authentication Feature

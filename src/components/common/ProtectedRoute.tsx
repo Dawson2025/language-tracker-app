@@ -1,3 +1,4 @@
+// resource_id: 59cd2e08-8fb1-488d-92c6-3b85bfae8c16
 import React from 'react';
 import { Navigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';

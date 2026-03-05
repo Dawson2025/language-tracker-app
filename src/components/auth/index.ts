@@ -1,3 +1,4 @@
+// resource_id: dd380c54-9f03-4f62-a731-7666f8898436
 /**
  * Authentication Components Index
  * Language Tracker Authentication Feature

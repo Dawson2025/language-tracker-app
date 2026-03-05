@@ -1,3 +1,4 @@
+# resource_id: e19a26e0-dcc8-4b78-86c6-f5f923fa104a
 """
 Test Database Fixtures and Configuration
 Language Tracker Hard Testing Rule Implementation

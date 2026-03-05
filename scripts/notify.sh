@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# resource_id: d988da5a-fc5c-4fc2-918b-26bee7376df3
 set -euo pipefail
 title="${1:-Warp AI}"
 message="${2:-Turn complete}"

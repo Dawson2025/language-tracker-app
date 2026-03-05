@@ -1,3 +1,4 @@
+// resource_id: e9475569-ec55-4270-9b16-5cb1c1c4ffaf
 const { test, expect } = require('@playwright/test');
 
 test.describe('Flask Server Connectivity', () => {

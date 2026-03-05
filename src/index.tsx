@@ -1,3 +1,4 @@
+// resource_id: d248a43d-3365-4149-bced-6133ceae8267
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';

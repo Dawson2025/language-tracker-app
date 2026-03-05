@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# resource_id: 03aa20f0-5020-4cf0-8b82-7636674a1275
 '''
 Authentication Test Runner
 Language Tracker Authentication Feature

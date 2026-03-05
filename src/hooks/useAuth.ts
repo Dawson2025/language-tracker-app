@@ -1,3 +1,4 @@
+// resource_id: 7692e6e0-dc61-4c7e-a95b-bc63fce90c3a
 /**
  * Authentication Hook
  * Language Tracker Authentication Feature

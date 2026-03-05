@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# resource_id: 36a4df76-6eed-4cd3-9a52-7817dfc0608f
 """
 Integration test for authentication flow
 Tests the full authentication system from frontend to backend

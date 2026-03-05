@@ -1,3 +1,4 @@
+// resource_id: c2adb127-84de-46e7-9031-d706ab6d5230
 const { test, expect } = require('@playwright/test');
 
 test.describe('Authentication API Integration', () => {

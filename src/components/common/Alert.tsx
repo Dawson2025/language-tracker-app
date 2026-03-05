@@ -1,3 +1,4 @@
+// resource_id: 0158c18a-14b1-415e-a4ea-9766723c08da
 /**
  * Alert Component
  * Language Tracker Common Components

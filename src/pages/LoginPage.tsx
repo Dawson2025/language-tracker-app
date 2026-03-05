@@ -1,3 +1,4 @@
+// resource_id: e6ad7754-024f-4061-828c-c6e1e0c11f0d
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';

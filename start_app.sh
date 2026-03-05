@@ -1,4 +1,5 @@
 #!/bin/bash
+# resource_id: d9d652e6-b947-452e-9664-3569284a1595
 # Lang Trak Startup Script
 # Ensures the app runs with the virtual environment activated and TTS working
 

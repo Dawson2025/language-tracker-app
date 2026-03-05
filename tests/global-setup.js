@@ -1,3 +1,4 @@
+// resource_id: 740964ed-7148-4615-8638-448c96cb371e
 /**
  * Playwright Global Setup
  * Prepares test environment for E2E and user story testing

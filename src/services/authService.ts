@@ -1,3 +1,4 @@
+// resource_id: e47e2c07-9c65-4654-832f-37235dc397de
 /**
  * Authentication Service
  * Language Tracker Authentication Feature
